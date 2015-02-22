@@ -5,6 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>Simple Application</name>
+  
   <repositories>
   	<repository>
         <id>slalom</id>
@@ -28,6 +29,7 @@
      </repository>
   </repositories>
   <build>
+  	<finalName>simple-app</finalName>
   	<plugins>
   		<plugin>
   			<groupId>org.apache.maven.plugins</groupId>

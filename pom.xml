@@ -18,4 +18,11 @@
   		</plugin>
   	</plugins>
   </build>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.slalom</groupId>
+  		<artifactId>simple-lib</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>

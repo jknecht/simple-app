@@ -5,7 +5,28 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>Simple Application</name>
-  
+  <repositories>
+  	<repository>
+        <id>slalom</id>
+        <url>http://192.168.50.5:8081/artifactory/libs-release-local</url>
+        <releases>
+           <enabled>true</enabled>
+        </releases>
+        <snapshots>
+          <enabled>false</enabled>
+        </snapshots>        
+     </repository>
+  	<repository>
+        <id>slalom-snapshots</id>
+        <url>http://192.168.50.5:8081/artifactory/libs-snapshot-local</url>
+        <releases>
+           <enabled>false</enabled>
+        </releases>
+        <snapshots>
+          <enabled>true</enabled>
+        </snapshots>        
+     </repository>
+  </repositories>
   <build>
   	<plugins>
   		<plugin>
@@ -18,4 +39,11 @@
   		</plugin>
   	</plugins>
   </build>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.slalom</groupId>
+  		<artifactId>simple-lib</artifactId>
+  		<version>0.0.1</version>
+  	</dependency>
+  </dependencies>
 </project>
